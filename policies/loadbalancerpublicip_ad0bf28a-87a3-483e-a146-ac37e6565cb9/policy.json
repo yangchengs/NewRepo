@@ -1,0 +1,36 @@
+{
+ "properties": {
+  "displayName": "loadbalancerpublicip",
+  "policyType": "Custom",
+  "mode": "Indexed",
+  "metadata": {
+   "createdBy": "6ed8e765-b0b2-4e3f-831d-8ff1116cee3c",
+   "createdOn": "2022-09-21T12:55:59.1652011Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {},
+  "policyRule": {
+   "if": {
+    "allOf": [
+     {
+      "field": "type",
+      "equals": "Microsoft.Network/loadBalancers"
+     },
+     {
+      "not": {
+       "field": "Microsoft.Network/loadBalancers/frontendIPConfigurations[*].publicIPAddress.id",
+       "notLike": "*"
+      }
+     }
+    ]
+   },
+   "then": {
+    "effect": "audit"
+   }
+  }
+ },
+ "id": "/subscriptions/1ccb1bf8-f93f-42dc-886b-acdbc6f972eb/providers/Microsoft.Authorization/policyDefinitions/ad0bf28a-87a3-483e-a146-ac37e6565cb9",
+ "type": "Microsoft.Authorization/policyDefinitions",
+ "name": "ad0bf28a-87a3-483e-a146-ac37e6565cb9"
+}

@@ -1,0 +1,67 @@
+{
+ "properties": {
+  "displayName": "enforcehttpsstorage",
+  "policyType": "Custom",
+  "mode": "All",
+  "metadata": {
+   "createdBy": "6ed8e765-b0b2-4e3f-831d-8ff1116cee3c",
+   "createdOn": "2022-08-04T00:39:50.1807357Z",
+   "updatedBy": "ff74ce16-6ada-4497-96c7-242345fe1264",
+   "updatedOn": "2022-09-23T00:51:15.6791056Z",
+   "gitHubPolicy": {
+    "digest": "9a2df804e5c46278c74b66b49a75a653078c862d",
+    "repoName": "suncityxmu/azuretest",
+    "commitSha": "902e8a17337eb2cf96b8ab57c6dd8b5c531fe3cc",
+    "runUrl": "https://github.com/suncityxmu/azuretest/actions/runs/3109704938",
+    "filepath": "policies/enforcehttpsstorage_a9bf50da-2577-47b0-a50a-9c1db8d64818"
+   }
+  },
+  "parameters": {
+   "effect": {
+    "type": "String",
+    "metadata": {
+     "displayName": "Effect",
+     "description": "Enable or disable the execution of the policy"
+    },
+    "allowedValues": [
+     "Modify",
+     "Disabled"
+    ],
+    "defaultValue": "Modify"
+   }
+  },
+  "policyRule": {
+   "if": {
+    "allOf": [
+     {
+      "field": "type",
+      "equals": "Microsoft.Storage/storageAccounts"
+     },
+     {
+      "field": "Microsoft.Storage/storageAccounts/supportsHttpsTrafficOnly",
+      "equals": false
+     }
+    ]
+   },
+   "then": {
+    "effect": "[parameters('effect')]",
+    "details": {
+     "conflictEffect": "audit",
+     "roleDefinitionIds": [
+      "/providers/Microsoft.Authorization/roleDefinitions/17d1049b-9a84-46fb-8f53-869881c3d3ab"
+     ],
+     "operations": [
+      {
+       "operation": "addOrReplace",
+       "field": "Microsoft.Storage/storageAccounts/supportsHttpsTrafficOnly",
+       "value": true
+      }
+     ]
+    }
+   }
+  }
+ },
+ "id": "/subscriptions/1ccb1bf8-f93f-42dc-886b-acdbc6f972eb/providers/Microsoft.Authorization/policyDefinitions/a9bf50da-2577-47b0-a50a-9c1db8d64818",
+ "type": "Microsoft.Authorization/policyDefinitions",
+ "name": "a9bf50da-2577-47b0-a50a-9c1db8d64818"
+}

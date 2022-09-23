@@ -1,0 +1,38 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "identity": {
+  "principalId": "eb8daafa-16d6-4d90-b22a-e1ce3db55aaf",
+  "tenantId": "da36c659-a281-4214-9f0e-1eb37be3179a",
+  "type": "SystemAssigned"
+ },
+ "properties": {
+  "displayName": "enforcetlsstorage_assign1",
+  "policyDefinitionId": "/subscriptions/1ccb1bf8-f93f-42dc-886b-acdbc6f972eb/providers/Microsoft.Authorization/policyDefinitions/a9bf50da-2577-47b0-a50a-9c1db8d647f5",
+  "scope": "/subscriptions/1ccb1bf8-f93f-42dc-886b-acdbc6f972eb",
+  "notScopes": [],
+  "parameters": {},
+  "metadata": {
+   "assignedBy": "YANGCHENG SHEN",
+   "parameterScopes": {},
+   "createdBy": "ff74ce16-6ada-4497-96c7-242345fe1264",
+   "createdOn": "2022-09-23T00:53:14.7011925Z",
+   "updatedBy": null,
+   "updatedOn": null,
+   "gitHubPolicy": {
+    "digest": "d43b5b0976e6da39344d51207f3e90d76b50d119",
+    "repoName": "suncityxmu/azuretest",
+    "commitSha": "902e8a17337eb2cf96b8ab57c6dd8b5c531fe3cc",
+    "runUrl": "https://github.com/suncityxmu/azuretest/actions/runs/3109704938",
+    "filepath": "policies/enforcetlsstorage_a9bf50da-2577-47b0-a50a-9c1db8d647f5/assign.enforcetlsstorage_assign1_64c65ef7282749c0bdad917c.json"
+   }
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/1ccb1bf8-f93f-42dc-886b-acdbc6f972eb/providers/Microsoft.Authorization/policyAssignments/64c65ef7282749c0bdad917c",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "64c65ef7282749c0bdad917c",
+ "location": "eastus"
+}
