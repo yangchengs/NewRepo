@@ -1,0 +1,112 @@
+{
+ "properties": {
+  "displayName": "deploylifecyclemanagement_mgmt",
+  "policyType": "Custom",
+  "mode": "Indexed",
+  "metadata": {
+   "createdBy": "6ed8e765-b0b2-4e3f-831d-8ff1116cee3c",
+   "createdOn": "2022-09-21T08:56:44.8601283Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {
+   "effect": {
+    "type": "String",
+    "metadata": {
+     "displayName": "Effect",
+     "description": "Enable or disable the execution of the policy"
+    },
+    "allowedValues": [
+     "DeployIfNotExists",
+     "Disabled"
+    ],
+    "defaultValue": "DeployIfNotExists"
+   }
+  },
+  "policyRule": {
+   "if": {
+    "field": "type",
+    "equals": "Microsoft.Storage/storageAccounts"
+   },
+   "then": {
+    "effect": "[parameters('effect')]",
+    "details": {
+     "type": "Microsoft.Storage/storageAccounts/managementPolicies",
+     "name": "default",
+     "existenceCondition": {
+      "count": {
+       "field": "Microsoft.Storage/storageAccounts/managementPolicies/policy.rules[*]",
+       "where": {
+        "value": "[current('Microsoft.Storage/storageAccounts/managementPolicies/policy.rules[*].name')]",
+        "equals": "rule1"
+       }
+      },
+      "greater": 0
+     },
+     "roleDefinitionIds": [
+      "/providers/Microsoft.Authorization/roleDefinitions/17d1049b-9a84-46fb-8f53-869881c3d3ab"
+     ],
+     "deployment": {
+      "properties": {
+       "mode": "incremental",
+       "template": {
+        "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+        "contentVersion": "1.0.0.0",
+        "parameters": {
+         "storageAccountName": {
+          "type": "string"
+         }
+        },
+        "resources": [
+         {
+          "type": "Microsoft.Storage/storageAccounts/managementPolicies",
+          "apiVersion": "2021-08-01",
+          "name": "[concat(parameters('storageAccountName'), '/default')]",
+          "properties": {
+           "policy": {
+            "rules": [
+             {
+              "name": "rule1",
+              "enabled": true,
+              "type": "Lifecycle",
+              "definition": {
+               "filters": {
+                "blobTypes": [
+                 "blockBlob"
+                ]
+               },
+               "actions": {
+                "baseBlob": {
+                 "delete": {
+                  "daysAfterModificationGreaterThan": 55
+                 }
+                },
+                "snapshot": {
+                 "delete": {
+                  "daysAfterCreationGreaterThan": 90
+                 }
+                }
+               }
+              }
+             }
+            ]
+           }
+          }
+         }
+        ]
+       },
+       "parameters": {
+        "storageAccountName": {
+         "value": "[field('name')]"
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/yangshenmg1/providers/Microsoft.Authorization/policyDefinitions/32c074ea-ddb1-4301-8eae-f182b173cd39",
+ "type": "Microsoft.Authorization/policyDefinitions",
+ "name": "32c074ea-ddb1-4301-8eae-f182b173cd39"
+}

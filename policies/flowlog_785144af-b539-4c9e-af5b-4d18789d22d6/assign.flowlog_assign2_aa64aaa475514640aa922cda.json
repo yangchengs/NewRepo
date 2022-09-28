@@ -1,0 +1,47 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "identity": {
+  "principalId": "f22448ba-87c7-43cb-b828-bdfe2687b7de",
+  "tenantId": "da36c659-a281-4214-9f0e-1eb37be3179a",
+  "type": "SystemAssigned"
+ },
+ "properties": {
+  "displayName": "flowlog_assign2",
+  "policyDefinitionId": "/subscriptions/1ccb1bf8-f93f-42dc-886b-acdbc6f972eb/providers/Microsoft.Authorization/policyDefinitions/785144af-b539-4c9e-af5b-4d18789d22d6",
+  "scope": "/subscriptions/1ccb1bf8-f93f-42dc-886b-acdbc6f972eb",
+  "notScopes": [],
+  "parameters": {
+   "nsgRegion": {
+    "value": "eastasia"
+   },
+   "storageId": {
+    "value": "/subscriptions/1ccb1bf8-f93f-42dc-886b-acdbc6f972eb/resourceGroups/testrg1/providers/Microsoft.Storage/storageAccounts/yangshendlseastasia01"
+   },
+   "networkWatcherRG": {
+    "value": "networkwatcherrg"
+   },
+   "networkWatcherName": {
+    "value": "NetworkWatcher_eastasia"
+   }
+  },
+  "metadata": {
+   "assignedBy": "YANGCHENG SHEN",
+   "parameterScopes": {
+    "nsgRegion": "/subscriptions/1ccb1bf8-f93f-42dc-886b-acdbc6f972eb",
+    "networkWatcherRG": "/subscriptions/1ccb1bf8-f93f-42dc-886b-acdbc6f972eb"
+   },
+   "createdBy": "6ed8e765-b0b2-4e3f-831d-8ff1116cee3c",
+   "createdOn": "2022-09-28T05:21:52.8960523Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/1ccb1bf8-f93f-42dc-886b-acdbc6f972eb/providers/Microsoft.Authorization/policyAssignments/aa64aaa475514640aa922cda",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "aa64aaa475514640aa922cda",
+ "location": "eastus"
+}
