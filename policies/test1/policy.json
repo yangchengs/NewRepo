@@ -4,7 +4,6 @@
       "policyType": "Custom",
       "mode": "Indexed",
       "description": "",
-      "id": "/subscriptions/1ccb1bf8-f93f-42dc-886b-acdbc6f972eb/providers/Microsoft.Authorization/policyDefinitions/test20220929v2sacheckqapublicblobacc",
       "metadata": {
         "category": "Storage",
         "version": "1.0.0"
