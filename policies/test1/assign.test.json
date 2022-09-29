@@ -3,6 +3,11 @@
   "name": "A0",
   "tier": "Free"
  },
+  "identity": {
+  "principalId": "f22448ba-87c7-43cb-b828-bdfe2687b7de",
+  "tenantId": "da36c659-a281-4214-9f0e-1eb37be3179a",
+  "type": "SystemAssigned"
+ },
  "properties": {
   "displayName": "storageaccounttlssetting_assign2",
   "policyDefinitionId": "/subscriptions/1ccb1bf8-f93f-42dc-886b-acdbc6f972eb/providers/Microsoft.Authorization/policyDefinitions/test20220929v2sacheckqapublicblobacc",
