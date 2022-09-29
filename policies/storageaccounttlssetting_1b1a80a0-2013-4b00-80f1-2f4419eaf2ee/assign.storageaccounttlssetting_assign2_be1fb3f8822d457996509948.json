@@ -1,0 +1,26 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "properties": {
+  "displayName": "storageaccounttlssetting_assign2",
+  "policyDefinitionId": "/subscriptions/1ccb1bf8-f93f-42dc-886b-acdbc6f972eb/providers/Microsoft.Authorization/policyDefinitions/1b1a80a0-2013-4b00-80f1-2f4419eaf2ee",
+  "scope": "/subscriptions/1ccb1bf8-f93f-42dc-886b-acdbc6f972eb/resourceGroups/yangshentest010",
+  "notScopes": [],
+  "parameters": {},
+  "description": "",
+  "metadata": {
+   "assignedBy": "YANGCHENG SHEN",
+   "parameterScopes": {},
+   "createdBy": "6ed8e765-b0b2-4e3f-831d-8ff1116cee3c",
+   "createdOn": "2022-09-29T08:08:54.7891906Z",
+   "updatedBy": "6ed8e765-b0b2-4e3f-831d-8ff1116cee3c",
+   "updatedOn": "2022-09-29T08:11:09.7850915Z"
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/1ccb1bf8-f93f-42dc-886b-acdbc6f972eb/resourceGroups/yangshentest010/providers/Microsoft.Authorization/policyAssignments/be1fb3f8822d457996509948",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "be1fb3f8822d457996509948"
+}
