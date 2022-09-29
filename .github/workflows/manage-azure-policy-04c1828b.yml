@@ -33,3 +33,4 @@ jobs:
           policies/deploylifecyclemanagement_mgmt_32c074ea-ddb1-4301-8eae-f182b173cd39/**
           policies/flowlog_785144af-b539-4c9e-af5b-4d18789d22d6/**
           policies/test1/**
+          policies/storageaccounttlssetting_1b1a80a0-2013-4b00-80f1-2f4419eaf2ee/**
