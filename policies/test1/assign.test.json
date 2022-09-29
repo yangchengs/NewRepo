@@ -1,12 +1,10 @@
 {
 
-    "identity": {
-
-     "type": "SystemAssigned",
-
-     "location": "eastus"
-
-    },
+ "identity": {
+  "principalId": "f22448ba-87c7-43cb-b828-bdfe2687b7de",
+  "tenantId": "da36c659-a281-4214-9f0e-1eb37be3179a",
+  "type": "SystemAssigned"
+ },
 
 
 
