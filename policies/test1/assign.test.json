@@ -4,7 +4,7 @@
 
      "type": "SystemAssigned",
 
-     "location": "eaatus"
+     "location": "eastus"
 
     },
 
@@ -40,7 +40,8 @@
 
     "name": "test20220929v2_sav2",
 
-    "type": "Microsoft.Authorization/policyAssignments"
+    "type": "Microsoft.Authorization/policyAssignments",
+    "location": "eastus"
 
    
 
