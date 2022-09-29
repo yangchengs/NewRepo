@@ -27,5 +27,6 @@
  },
  "id": "/subscriptions/1ccb1bf8-f93f-42dc-886b-acdbc6f972eb/resourceGroups/yangshentest010/providers/Microsoft.Authorization/policyAssignments/be1fb3f8822d457996509949",
  "type": "Microsoft.Authorization/policyAssignments",
- "name": "be1fb3f8822d457996509949"
+ "name": "be1fb3f8822d457996509949",
+ "location" : "eastus"
 }
