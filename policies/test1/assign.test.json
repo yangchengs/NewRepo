@@ -14,7 +14,7 @@
 
      "policyDefinitionId": "/subscriptions/1ccb1bf8-f93f-42dc-886b-acdbc6f972eb/providers/Microsoft.Authorization/policyDefinitions/test20220929v2sacheckqapublicblobacc",
 
-     "scope": "/subscriptions/1ccb1bf8-f93f-42dc-886b-acdbc6f972eb/resourcegroups/yangshentest010",
+     "scope": "/subscriptions/1ccb1bf8-f93f-42dc-886b-acdbc6f972eb/resourceGroups/yangshentest010",
 
      "notScopes": [],
 
