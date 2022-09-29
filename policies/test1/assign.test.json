@@ -1,0 +1,49 @@
+{
+
+    "identity": {
+
+     "type": "SystemAssigned",
+
+     "location": "eaatus"
+
+    },
+
+
+
+    "properties": {
+
+     "displayName": "test20220929v2_sav2",
+
+     "policyDefinitionId": "/subscriptions/1ccb1bf8-f93f-42dc-886b-acdbc6f972eb/providers/Microsoft.Authorization/policyDefinitions/test20220929v2sacheckqapublicblobacc",
+
+     "scope": "/subscriptions/1ccb1bf8-f93f-42dc-886b-acdbc6f972eb/resourcegroups/yangshentest010",
+
+     "notScopes": [],
+
+     "parameters": {},
+
+     "metadata": {
+
+      "parameterScopes": {},
+
+      "updatedBy": null,
+
+      "updatedOn": null
+
+     },
+
+     "enforcementMode": "Default"
+
+    },
+
+    "id": "/subscriptions/1ccb1bf8-f93f-42dc-886b-acdbc6f972eb/providers/Microsoft.Authorization/policyAssignments/test20220929v2_sav2",
+
+    "name": "test20220929v2_sav2",
+
+    "type": "Microsoft.Authorization/policyAssignments"
+
+   
+
+   
+
+}
