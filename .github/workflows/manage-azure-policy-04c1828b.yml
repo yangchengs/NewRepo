@@ -32,3 +32,4 @@ jobs:
         paths: |
           policies/deploylifecyclemanagement_mgmt_32c074ea-ddb1-4301-8eae-f182b173cd39/**
           policies/flowlog_785144af-b539-4c9e-af5b-4d18789d22d6/**
+          policies/test1/**
