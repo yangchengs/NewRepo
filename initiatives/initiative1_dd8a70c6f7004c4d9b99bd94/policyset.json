@@ -1,0 +1,33 @@
+{
+ "properties": {
+  "displayName": "initiative1",
+  "policyType": "Custom",
+  "description": "",
+  "metadata": {
+   "version": "1.0",
+   "createdBy": "94c47834-8b51-4567-8973-3ad3a0743b67",
+   "createdOn": "2022-10-08T06:46:08.1181912Z",
+   "updatedBy": "94c47834-8b51-4567-8973-3ad3a0743b67",
+   "updatedOn": "2022-10-08T06:50:17.603402Z"
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "sqlserver3_1",
+    "policyDefinitionId": "/subscriptions/79ed831f-c7b8-402e-a226-de8aa5f4764a/providers/Microsoft.Authorization/policyDefinitions/ec5e8c6a-28f6-4e36-9ffb-0afcf4b13a3d",
+    "parameters": {},
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "mypolicy0720_1",
+    "policyDefinitionId": "/subscriptions/79ed831f-c7b8-402e-a226-de8aa5f4764a/providers/Microsoft.Authorization/policyDefinitions/396414c2-739a-430a-9c7c-d30c650391be",
+    "parameters": {},
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/subscriptions/79ed831f-c7b8-402e-a226-de8aa5f4764a/providers/Microsoft.Authorization/policySetDefinitions/dd8a70c6f7004c4d9b99bd94",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "dd8a70c6f7004c4d9b99bd94"
+}
