@@ -1,0 +1,31 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "identity": {
+  "principalId": "40c4daaf-d63c-41f5-8487-5c6edfe7b319",
+  "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
+  "type": "SystemAssigned"
+ },
+ "properties": {
+  "displayName": "initiative1_assign1",
+  "policyDefinitionId": "/subscriptions/79ed831f-c7b8-402e-a226-de8aa5f4764a/providers/Microsoft.Authorization/policySetDefinitions/dd8a70c6f7004c4d9b99bd94",
+  "scope": "/subscriptions/79ed831f-c7b8-402e-a226-de8aa5f4764a",
+  "notScopes": [],
+  "parameters": {},
+  "metadata": {
+   "assignedBy": "Yangcheng Shen",
+   "parameterScopes": {},
+   "createdBy": "94c47834-8b51-4567-8973-3ad3a0743b67",
+   "createdOn": "2022-10-08T06:54:22.4897008Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/79ed831f-c7b8-402e-a226-de8aa5f4764a/providers/Microsoft.Authorization/policyAssignments/cb9f708fd2424505a2c656c0",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "cb9f708fd2424505a2c656c0",
+ "location": "eastus"
+}
